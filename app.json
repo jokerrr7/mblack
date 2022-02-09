@@ -1,0 +1,88 @@
+{
+    "name": "𝙢𝙪𝙨𝙞𝙘 𝙟𝙤𝙠𝙚𝙧 𓃠︎",
+    "logo": "https://telegra.ph/file/edadc559dc23dfccb9895.jpg",
+    "description": "JOKER Music Voice Chat.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/jokerrr7/mblack",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "هنا حط كود تيرمكس ياصحبي",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "هنا هتحط تكن بوتك يحبيب قلبي",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "هنا هتحط اسم بوت الاغاني",
+            "required": false,
+            "value": "ناروتو"
+        },
+        "BOT_USERNAME": {
+            "description": "يوزر نيــم البوت بتاعك منغير علامه -> @",
+            "required": true,
+            "value": "E_l_k_e_a_t_i_b16bot"
+        },
+        "ASSISTANT_NAME": {
+            "description": "يوزر نيــم بوتك تاني منغير ->  @",
+            "required": true,
+            "value": "E_l_k_e_a_t_i_b16bot"
+        },
+        "BG_IMAGE": {
+            "description": "هنا هتحط صوره الخلفيه ان وجدت",
+            "required": false,
+            "value": "https://telegra.ph/file/edadc559dc23dfccb9895.jpg"
+        },
+        "THUMB_IMG": {
+            "description": "سيبــها زي مهي عادي يبا -> bg_image",
+            "required": false,
+            "value": "https://telegra.ph/file/edadc559dc23dfccb9895.jpg"
+        },
+        "OWNER_NAME": {
+            "description": "حط اليوز بتاعك منغير علامه @",
+            "required": false,
+            "value": "E_l_k_e_a_t_i_b"
+        },
+        "API_ID": {
+            "description": "حــط App ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "حــط Api hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "حط ايدي الادمن بتاع البوت",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max",
+            "required": true,
+            "value": "60"
+        },
+        "PMPERMIT": {
+            "description": "سيــبها.",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "هنا حط قناه السورس بتاعتك",
+            "required": false,
+            "value": "MusicElkeatib"
+        },
+        "GROUP_SUPPORT": {
+            "description": "هنا حط معرف جروبك",
+            "required": false,
+            "value": "Music54Elkeatib"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
